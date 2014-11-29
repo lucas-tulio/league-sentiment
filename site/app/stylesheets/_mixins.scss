@@ -1,0 +1,27 @@
+// Custom mixins
+
+// Define element as block using background image dimensions
+@mixin block-background($url){
+  display: block;
+  width: image-width($url);
+  height: image-height($url);
+  background-image: url($url);
+  background-repeat: no-repeat;
+}
+
+@mixin animation($animate...) {
+  $max: length($animate);
+  $animations: '';
+
+  @for $i from 1 through $max {
+    $animations: #{$animations + nth($animate, $i)};
+
+    @if $i < $max {
+      $animations: #{$animations + ", "};
+    }
+  }
+  -webkit-animation: $animations;
+  -moz-animation:    $animations;
+  -o-animation:      $animations;
+  animation:         $animations;
+}

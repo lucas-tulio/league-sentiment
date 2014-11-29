@@ -1,0 +1,205 @@
+body{
+	background-image: url("../images/background.png");
+	font-family: "HelveticaNeue-Light", helvetica, arial;
+	color: #4c4c4c;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	font-family: "HelveticaNeue-Light", helvetica, arial;
+	font-weight: 300;
+	font-size: 32pt;
+	letter-spacing: 4px;
+	text-shadow: 0px 2px #c9c9c9;
+}
+
+h2 {
+	text-align: center;
+	margin: 60px;
+	font-size: 22pt;
+	font-weight: 300;
+	letter-spacing: 1.1px;
+	text-shadow: 0px 1px #c9c9c9;
+}
+
+h3 {
+	text-align: center;
+	margin: 60px;
+	font-weight: 300;
+	letter-spacing: 1.1px;
+	text-shadow: 0px 1px #c9c9c9;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+
+/* Status Box */
+
+.status {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding: 10px;
+
+	font-size: 18pt;
+	text-align: center;
+	background-color: #ffffff;
+
+	box-shadow: 0px 4px #c9c9c9;
+	letter-spacing: 1.1px;
+
+	.status-text {
+		padding: 0px;
+		margin: 0px;
+		
+		span.numbers{
+			font-size: 24pt;
+		}
+	}
+}
+
+/* Trending */
+
+.trending-container {
+	width: 800px;
+	margin: auto;
+}
+.trending-list {
+	display: block;
+	text-align: center;
+}
+p.trending-text {
+	display: inline-block;
+	margin: 2px;
+	font-size: 16pt;
+}
+.row-icon {
+	display: inline-block;
+	vertical-align: middle;
+
+	/* Rounded Corners */
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	width: 1.2em;
+	height: 1.2em;
+	margin-bottom: 4px;
+
+	&.icon1 {
+		background-color: #EF2C67;
+	}
+	&.icon2 {
+		background-color: #FBB04B;
+	}
+	&.icon3 {
+		background-color: #3DBCB9;
+	}
+	&.icon4 {
+		background-color: #2B87E8;
+	}
+	&.icon5 {
+		background-color: #7A5892;
+	}
+	&.icon6 {
+		background-color: #C5C5C5;
+	}
+}
+td.list-text {
+	text-align: center;
+	font-size: 16pt;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	&.top {
+		text-align: left;
+	}
+}
+
+/* Bar Chart Style */
+
+.bar {
+
+	display: block;
+	vertical-align: middle;
+
+	/* Rounded Corners */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	width: 0;
+	height: 2em;
+	margin: 4px;
+
+	@include transition(all 1s cubic-bezier(0.175, 0.885, 0.000, 1.030));
+
+	&.positive {
+		background-color: #3CD9B4;
+		margin-left: auto;
+	}
+
+	&.negative {
+		background-color: #DA153F;
+	}
+
+	&.loved {
+		background-color: #3CD9B4;
+	}
+
+	&.hated {
+		background-color: #DA153F;
+	}
+}
+
+td.bar-td {
+	width: 310px;
+}
+td.loved-hated-column {
+	vertical-align: top;
+}
+
+/* Score Text Style */
+
+.score {
+	margin-top: 8px;
+	margin-left: 8px;
+
+	@include transition(all 1s linear);
+
+	&.negative {
+		color: #ddd;
+	}
+}
+
+/* Other sections */
+
+.section-container {
+	width: 1080px;
+	margin: auto;
+}
+
+/* Footer */
+
+.footer{
+
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin-top: 60px;
+	background-image: url("../images/background-footer.png");
+	
+	box-shadow: 0px -2px #848584;
+}
+.footer-text {
+	text-align: center;
+	margin: 20px;
+}
