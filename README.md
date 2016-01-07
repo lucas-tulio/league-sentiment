@@ -1,7 +1,7 @@
 league-sentiment
 ================
 
-Sentiment Analysis on Reddit's League of Legends comments. http://leaguesentiment.com/
+Sentiment Analysis on Reddit's League of Legends comments.
 
 #### Requirements
 
